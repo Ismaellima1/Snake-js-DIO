@@ -38,7 +38,14 @@ function update(event){
   if(event.keyCode == 83 && direction != "up") direction = "down";
 }
 
+let botaoJogar = document.querySelector('.jogar');
+botaoJogar.addEventListener('click', playGame);
+
+
 function playGame(){
+  botaoJogar.style.display = "none";
+  document.querySelector('.instrucoes-game').style.display = "block";
+
   function iniciarJogo(){
 
     if(snake[0].x > 15 * box && direction == "right") snake[0].x = 0;

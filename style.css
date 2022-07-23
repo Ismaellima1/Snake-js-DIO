@@ -4,6 +4,8 @@ body{
   flex-direction: column;
   align-items: center;
   background-color: rgb(36, 37, 51);
+  color: rgba(255, 255, 255, 0.836);
+  font-family: 'Arial';
 }
 
 h1{
@@ -26,4 +28,16 @@ h1{
   box-shadow: inset 200px 0 0 0 rgb(255, 255, 255), 0px 0px 10px 1px rgb(255, 255, 255);
   border-radius: 5px;
   font-size: calc(20pt*1.1);
+}
+
+.instrucoes-game{
+  display: none;
+  width: 20%;
+  position: absolute;
+  top: 4rem;
+  right: 60rem;
+}
+
+span{
+  color: red;
 }
